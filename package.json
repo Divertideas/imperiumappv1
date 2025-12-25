@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node ./node_modules/vite/bin/vite.js",
-    "build": "node ./node_modules/typescript/lib/tsc.js -b && node ./node_modules/vite/bin/vite.js build",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "node ./node_modules/vite/bin/vite.js preview"
+    "preview": "vite preview"
   },
   "dependencies": {
     "nanoid": "^5.1.6",
@@ -16,7 +16,7 @@
     "react-router-dom": "^7.11.0",
     "zustand": "^5.0.9"
   },
-    "devDependencies": {
+  "devDependencies": {
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
@@ -30,3 +30,4 @@
     "node": "20.x"
   }
 }
+
